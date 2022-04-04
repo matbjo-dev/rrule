@@ -110,6 +110,9 @@ export namespace dateutil {
    * @return {Number} python-like weekday
    */
   export const getWeekday = function (date: Date) {
+    console.log(date)
+    console.log(typeof(date))
+    console.log(date.getUTCDay)
     return PY_WEEKDAYS[date.getUTCDay()]
   }
 
